@@ -1,12 +1,16 @@
 ### about
 
-school student from **Astana, Kazakhstan** (NIS Astana-Nura). learning **AI engineering**: computer vision, Python backends, Telegram bots. leading teams at hackathons.
+школьник из **Астаны, Казахстан** (NIS Astana-Nura). занимаюсь **AI-инженерией**: computer vision, Python-бэкенды, Telegram-боты. собираю команды на хакатонах.
 
-🌐 [adilzhan.vercel.app](https://adilzhan.vercel.app) • ✈️ Telegram [@crybaby_c](https://t.me/crybaby_c)
+🌐 [adilzhan.vercel.app](https://adilzhan.vercel.app) • ✈️ [@crybaby_c](https://t.me/crybaby_c)
 
 ---
 
-### stack
+### core skills
+
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=py,ts,js,html,css,nextjs,tailwind,fastapi,supabase,postgres,vercel,githubactions,git&theme=dark" alt="core skills" />
+</p>
 
 - **languages**: Python • TypeScript • JavaScript • SQL
 - **ai / ml**: YOLO • OpenAI API • GitHub Models
@@ -15,35 +19,28 @@ school student from **Astana, Kazakhstan** (NIS Astana-Nura). learning **AI engi
 
 ---
 
-### projects
+### featured projects
 
-#### [WasteWise](https://github.com/adekaa11/wastewise) · [live](https://wastewise-kz.streamlit.app)
-**AI waste sorting for schools**
+#### [WasteWise](https://github.com/adekaa11/wastewise)
+**AI-сортировка отходов для школ**
 
-take a photo of trash → YOLO classifies it into 7 categories → the app tells which bin it goes in. quiz, points and a school leaderboard. promo site: [wastewise-landing](https://wastewise-landing.vercel.app).
+фото мусора → YOLO определяет один из 7 типов → приложение подсказывает, в какой контейнер выбросить. викторина, баллы, рейтинг школ.
 
-`Python` `YOLO` `Streamlit` `Supabase` `GitHub Actions`
+[live demo](https://wastewise-kz.streamlit.app) • [promo site](https://wastewise-landing.vercel.app)
 
 #### [Homework bot](https://github.com/adekaa11/d-z-project)
-**Telegram bot for a whole class**
+**Telegram-бот для всего класса**
 
-send a photo of the homework page → AI extracts subject, task and deadline. every evening it sends the list for tomorrow.
+фото страницы с домашкой → AI выписывает предмет, задание и срок. каждый вечер присылает список на завтра.
 
-`Python` `Vercel serverless + Cron` `Supabase` `GitHub Models`
+Python • Vercel serverless + Cron • Supabase • GitHub Models
 
 #### [Read it later](https://github.com/adekaa11/read-it-later-tg-bot)
-**Telegram bot for saving links to read later**
+**Telegram-бот для сохранения ссылок «на потом»**
 
-`Python` `Supabase` `Render` `webhook`
+Python • Supabase • Render • webhook
 
-#### [Portfolio](https://github.com/adekaa11/portfolio) · [live](https://adilzhan.vercel.app)
-**personal site**
+#### [Portfolio](https://github.com/adekaa11/portfolio)
+**личный сайт** — [adilzhan.vercel.app](https://adilzhan.vercel.app)
 
-`Next.js 14` `TypeScript` `Tailwind CSS` `Framer Motion`
-
----
-
-### achievements
-
-- 🥈 2nd place, «Дарын» national science projects contest (LURA)
-- hackathons: Hacknext 2026, VentureHack 2026
+Next.js 14 • TypeScript • Tailwind CSS • Framer Motion
