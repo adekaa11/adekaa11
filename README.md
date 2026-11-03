@@ -14,12 +14,10 @@
 
 ## стек
 
-| | |
-|---|---|
-| языки | <img src="https://skillicons.dev/icons?i=py,ts,js,html,css" height="32" /> |
-| веб | <img src="https://skillicons.dev/icons?i=nextjs,tailwind,fastapi" height="32" /> |
-| данные и деплой | <img src="https://skillicons.dev/icons?i=supabase,postgres,vercel,githubactions,git" height="32" /> |
-| ML | YOLO · OpenAI API · GitHub Models |
+- **языки:** Python, TypeScript, JavaScript, HTML/CSS
+- **веб:** Next.js, Tailwind CSS, FastAPI, Streamlit
+- **данные и деплой:** Supabase (Postgres), Vercel, Render, GitHub Actions, Git
+- **ML:** YOLO, OpenAI API, GitHub Models
 
 ## проекты
 
