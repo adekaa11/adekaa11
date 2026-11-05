@@ -1,35 +1,35 @@
 <p align="center">
-  <img src="assets/header.svg" alt="Адильжан Кадыргажы" width="100%">
+  <img src="assets/header.svg" alt="Adilzhan Kadyrgazhy" width="100%">
 </p>
 
 <p align="center">
-  <a href="https://adilzhan.vercel.app">сайт</a> · <a href="https://t.me/crybaby_c">telegram</a>
+  <a href="https://adilzhan.vercel.app">website</a> · <a href="https://t.me/crybaby_c">telegram</a>
 </p>
 
 ---
 
-## чем занимаюсь
+## about
 
-учусь в NIS Astana-Nura, 9 класс. основное направление: **AI-инженерия** и computer vision. делаю веб-сервисы и Telegram-ботов, езжу на хакатоны и собираю команды.
+I'm a 9th-grade student at NIS Astana-Nura in Astana, Kazakhstan. I'm into AI engineering and computer vision. I build web services and Telegram bots, and I go to hackathons with my team.
 
-сейчас прохожу roadmap AI Engineer: учу основы по порядку, а мини-проекты выкладываю сюда.
+Right now I'm going through the AI Engineer roadmap step by step. The small projects from it end up here.
 
-## стек
+## stack
 
-- **языки:** Python, TypeScript, JavaScript, HTML/CSS
-- **веб:** Next.js, Tailwind CSS, FastAPI, Streamlit
-- **данные и деплой:** Supabase (Postgres), Vercel, Render, GitHub Actions, Git
+- **languages:** Python, TypeScript, JavaScript, HTML/CSS
+- **web:** Next.js, Tailwind CSS, FastAPI, Streamlit
+- **data & deploy:** Supabase (Postgres), Vercel, Render, GitHub Actions, Git
 - **ML:** YOLO, OpenAI API, GitHub Models
 
-## проекты
+## projects
 
-| проект | что делает | под капотом |
+| project | what it does | built with |
 |---|---|---|
-| **[WasteWise](https://github.com/adekaa11/wastewise)** ([demo](https://wastewise-kz.streamlit.app)) | по фото определяет тип отхода (7 категорий) и подсказывает, в какой контейнер его выбросить; есть викторина и рейтинг школ | Python, YOLO, Streamlit, Supabase |
-| **[Бот для домашки](https://github.com/adekaa11/d-z-project)** | класс присылает фото страницы, AI выписывает предмет, задание и срок, вечером бот напоминает, что задано на завтра | Python, Vercel Cron, Supabase |
-| **[Read it later](https://github.com/adekaa11/read-it-later-tg-bot)** | Telegram-бот: сохраняет ссылки, чтобы прочитать позже | Python, Render, Supabase |
-| **[Портфолио](https://github.com/adekaa11/portfolio)** ([adilzhan.vercel.app](https://adilzhan.vercel.app)) | личный сайт | Next.js 14, TypeScript, Tailwind, Framer Motion |
+| **[WasteWise](https://github.com/adekaa11/wastewise)** ([demo](https://wastewise-kz.streamlit.app)) | takes a photo of trash, detects one of 7 waste types and tells you which bin it goes in. has a quiz and a school leaderboard | Python, YOLO, Streamlit, Supabase |
+| **[Homework bot](https://github.com/adekaa11/d-z-project)** | students send a photo of the homework page, AI pulls out the subject, task and deadline. every evening the bot sends what's due tomorrow | Python, Vercel Cron, Supabase |
+| **[Read it later](https://github.com/adekaa11/read-it-later-tg-bot)** | Telegram bot that saves links so you can read them later | Python, Render, Supabase |
+| **[Portfolio](https://github.com/adekaa11/portfolio)** ([adilzhan.vercel.app](https://adilzhan.vercel.app)) | my personal site | Next.js 14, TypeScript, Tailwind, Framer Motion |
 
-## связаться
+## contact
 
-telegram **[@crybaby_c](https://t.me/crybaby_c)** · сайт **[adilzhan.vercel.app](https://adilzhan.vercel.app)**
+telegram **[@crybaby_c](https://t.me/crybaby_c)** · website **[adilzhan.vercel.app](https://adilzhan.vercel.app)**
