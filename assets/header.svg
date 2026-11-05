@@ -1,67 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" width="900" height="280" role="img" aria-label="Адильжан Кадыргажы">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="900" height="300" role="img" aria-label="Adilzhan Kadyrgazhy">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#1b1464"/>
-      <stop offset="0.55" stop-color="#2b3a8f"/>
-      <stop offset="1" stop-color="#0f766e"/>
-    </linearGradient>
-    <linearGradient id="ink" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#ffffff"/>
-      <stop offset="1" stop-color="#c7f9ec"/>
-    </linearGradient>
-    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="26"/>
-    </filter>
-    <clipPath id="clip"><rect width="900" height="280" rx="20"/></clipPath>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#1c2540"/></pattern>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#6d28d9" stop-opacity=".35"/><stop offset="1" stop-color="#6d28d9" stop-opacity="0"/></radialGradient>
+    <linearGradient id="name" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f1f5f9"/><stop offset="1" stop-color="#7dd3fc"/></linearGradient>
+    <clipPath id="clip"><rect width="900" height="300" rx="16"/></clipPath>
   </defs>
   <style>
-    text { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; }
-    .b1 { animation: d1 11s ease-in-out infinite; }
-    .b2 { animation: d2 13s ease-in-out infinite; }
-    .b3 { animation: d3 9s ease-in-out infinite; }
-    @keyframes d1 { 0%,100% { transform: translate(0,0); } 50% { transform: translate(90px,30px); } }
-    @keyframes d2 { 0%,100% { transform: translate(0,0); } 50% { transform: translate(-110px,-25px); } }
-    @keyframes d3 { 0%,100% { transform: translate(0,0); } 50% { transform: translate(60px,-30px); } }
-    .w1 { animation: wave 14s linear infinite; }
-    .w2 { animation: wave 9s linear infinite reverse; }
-    @keyframes wave { from { transform: translateX(0); } to { transform: translateX(-900px); } }
-    .tw { animation: tw 3.4s ease-in-out infinite; }
-    @keyframes tw { 0%,100% { opacity: .15; } 50% { opacity: 1; } }
-    .name { opacity: 0; animation: rise 1.2s ease-out .2s forwards; }
-    @keyframes rise { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+    .p { stroke-width: 2; stroke-linecap: round; stroke-dasharray: 9 100; stroke-dashoffset: 9; animation: flow 3.2s linear infinite; }
+    @keyframes flow { from { stroke-dashoffset: 9; } to { stroke-dashoffset: -100; } }
+    .halo { animation: halo 2.4s ease-in-out infinite; }
+    @keyframes halo { 0%,100% { opacity: .08; } 50% { opacity: .35; } }
+    .in { opacity: 0; animation: rise .9s ease-out forwards; }
+    .d1 { animation-delay: .1s; } .d2 { animation-delay: .35s; } .d3 { animation-delay: .6s; } .d4 { animation-delay: .85s; }
+    @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
     .tag { opacity: 0; animation: cyc 9s ease-in-out infinite both; }
-    .t2 { animation-delay: 3s; }
-    .t3 { animation-delay: 6s; }
-    @keyframes cyc { 0% { opacity: 0; transform: translateY(8px); } 6% { opacity: 1; transform: translateY(0); } 30% { opacity: 1; transform: translateY(0); } 36% { opacity: 0; transform: translateY(-8px); } 100% { opacity: 0; } }
+    .t2 { animation-delay: 3s; } .t3 { animation-delay: 6s; }
+    @keyframes cyc { 0% { opacity: 0; } 5% { opacity: 1; } 31% { opacity: 1; } 36% { opacity: 0; } 100% { opacity: 0; } }
   </style>
   <g clip-path="url(#clip)">
-    <rect width="900" height="280" fill="url(#bg)"/>
-    <g filter="url(#blur)">
-      <circle class="b1" cx="190" cy="70" r="75" fill="#ff8a4c" opacity=".75"/>
-      <circle class="b2" cx="720" cy="190" r="90" fill="#ff5fa2" opacity=".6"/>
-      <circle class="b3" cx="470" cy="40" r="55" fill="#3ee6c4" opacity=".6"/>
+    <rect width="900" height="300" fill="#0b1020"/>
+    <rect width="900" height="300" fill="url(#dots)"/>
+    <circle cx="740" cy="150" r="190" fill="url(#glow)"/>
+    <g font-family="'JetBrains Mono','Fira Code',Consolas,'Courier New',monospace">
+      <g class="in d1"><rect x="56" y="52" width="150" height="26" rx="13" fill="none" stroke="#334155"/><circle cx="72" cy="65" r="4" fill="#22c55e"/><text x="84" y="70" font-size="12" fill="#94a3b8" letter-spacing="2">AI ENGINEER</text></g>
+      <text class="in d2" x="56" y="128" font-size="42" font-weight="700" fill="url(#name)">Adilzhan</text>
+      <text class="in d2" x="56" y="174" font-size="42" font-weight="700" fill="url(#name)">Kadyrgazhy</text>
+      <g font-size="15" fill="#64748b">
+        <text class="tag" x="56" y="210"># building AI services in Python</text>
+        <text class="tag t2" x="56" y="210"># training computer vision models</text>
+        <text class="tag t3" x="56" y="210"># shipping Telegram bots</text>
+      </g>
+      <text class="in d3" x="56" y="244" font-size="15"><tspan fill="#e2e8f0">model</tspan><tspan fill="#94a3b8">.</tspan><tspan fill="#7dd3fc">predict</tspan><tspan fill="#94a3b8">(</tspan><tspan fill="#fbbf24">"trash.jpg"</tspan><tspan fill="#94a3b8">)</tspan><tspan fill="#475569">  # -&gt; plastic</tspan></text>
+      <text class="in d4" x="56" y="272" font-size="12" fill="#475569" letter-spacing="1">astana, kazakhstan  ·  utc+5</text>
+      <g stroke="#1e2d4a" stroke-width="1"><line x1="640" y1="100" x2="740" y2="75"/><line x1="640" y1="100" x2="740" y2="125"/><line x1="640" y1="100" x2="740" y2="175"/><line x1="640" y1="100" x2="740" y2="225"/><line x1="640" y1="150" x2="740" y2="75"/><line x1="640" y1="150" x2="740" y2="125"/><line x1="640" y1="150" x2="740" y2="175"/><line x1="640" y1="150" x2="740" y2="225"/><line x1="640" y1="200" x2="740" y2="75"/><line x1="640" y1="200" x2="740" y2="125"/><line x1="640" y1="200" x2="740" y2="175"/><line x1="640" y1="200" x2="740" y2="225"/><line x1="740" y1="75" x2="840" y2="125"/><line x1="740" y1="75" x2="840" y2="175"/><line x1="740" y1="125" x2="840" y2="125"/><line x1="740" y1="125" x2="840" y2="175"/><line x1="740" y1="175" x2="840" y2="125"/><line x1="740" y1="175" x2="840" y2="175"/><line x1="740" y1="225" x2="840" y2="125"/><line x1="740" y1="225" x2="840" y2="175"/></g>
+      <g><line class="p" pathLength="100" x1="640" y1="100" x2="740" y2="75" stroke="#38bdf8" style="animation-delay:0.00s"/><line class="p" pathLength="100" x1="640" y1="100" x2="740" y2="125" stroke="#38bdf8" style="animation-delay:0.37s"/><line class="p" pathLength="100" x1="640" y1="100" x2="740" y2="175" stroke="#38bdf8" style="animation-delay:0.74s"/><line class="p" pathLength="100" x1="640" y1="100" x2="740" y2="225" stroke="#38bdf8" style="animation-delay:1.11s"/><line class="p" pathLength="100" x1="640" y1="150" x2="740" y2="75" stroke="#38bdf8" style="animation-delay:1.48s"/><line class="p" pathLength="100" x1="640" y1="150" x2="740" y2="125" stroke="#38bdf8" style="animation-delay:1.85s"/><line class="p" pathLength="100" x1="640" y1="150" x2="740" y2="175" stroke="#38bdf8" style="animation-delay:2.22s"/><line class="p" pathLength="100" x1="640" y1="150" x2="740" y2="225" stroke="#38bdf8" style="animation-delay:2.59s"/><line class="p" pathLength="100" x1="640" y1="200" x2="740" y2="75" stroke="#38bdf8" style="animation-delay:2.96s"/><line class="p" pathLength="100" x1="640" y1="200" x2="740" y2="125" stroke="#38bdf8" style="animation-delay:0.13s"/><line class="p" pathLength="100" x1="640" y1="200" x2="740" y2="175" stroke="#38bdf8" style="animation-delay:0.50s"/><line class="p" pathLength="100" x1="640" y1="200" x2="740" y2="225" stroke="#38bdf8" style="animation-delay:0.87s"/><line class="p" pathLength="100" x1="740" y1="75" x2="840" y2="125" stroke="#a78bfa" style="animation-delay:1.24s"/><line class="p" pathLength="100" x1="740" y1="75" x2="840" y2="175" stroke="#a78bfa" style="animation-delay:1.61s"/><line class="p" pathLength="100" x1="740" y1="125" x2="840" y2="125" stroke="#a78bfa" style="animation-delay:1.98s"/><line class="p" pathLength="100" x1="740" y1="125" x2="840" y2="175" stroke="#a78bfa" style="animation-delay:2.35s"/><line class="p" pathLength="100" x1="740" y1="175" x2="840" y2="125" stroke="#a78bfa" style="animation-delay:2.72s"/><line class="p" pathLength="100" x1="740" y1="175" x2="840" y2="175" stroke="#a78bfa" style="animation-delay:3.09s"/><line class="p" pathLength="100" x1="740" y1="225" x2="840" y2="125" stroke="#a78bfa" style="animation-delay:0.26s"/><line class="p" pathLength="100" x1="740" y1="225" x2="840" y2="175" stroke="#a78bfa" style="animation-delay:0.63s"/></g>
+      <circle cx="640" cy="100" r="11" fill="#38bdf8" opacity=".15" class="halo" style="animation-delay:0.0s"/><circle cx="640" cy="100" r="6" fill="#0b1020" stroke="#38bdf8" stroke-width="2"/><circle cx="640" cy="150" r="11" fill="#38bdf8" opacity=".15" class="halo" style="animation-delay:0.5s"/><circle cx="640" cy="150" r="6" fill="#0b1020" stroke="#38bdf8" stroke-width="2"/><circle cx="640" cy="200" r="11" fill="#38bdf8" opacity=".15" class="halo" style="animation-delay:1.0s"/><circle cx="640" cy="200" r="6" fill="#0b1020" stroke="#38bdf8" stroke-width="2"/><circle cx="740" cy="75" r="11" fill="#38bdf8" opacity=".15" class="halo" style="animation-delay:0.0s"/><circle cx="740" cy="75" r="6" fill="#0b1020" stroke="#38bdf8" stroke-width="2"/><circle cx="740" cy="125" r="11" fill="#38bdf8" opacity=".15" class="halo" style="animation-delay:0.5s"/><circle cx="740" cy="125" r="6" fill="#0b1020" stroke="#38bdf8" stroke-width="2"/><circle cx="740" cy="175" r="11" fill="#38bdf8" opacity=".15" class="halo" style="animation-delay:1.0s"/><circle cx="740" cy="175" r="6" fill="#0b1020" stroke="#38bdf8" stroke-width="2"/><circle cx="740" cy="225" r="11" fill="#38bdf8" opacity=".15" class="halo" style="animation-delay:1.5s"/><circle cx="740" cy="225" r="6" fill="#0b1020" stroke="#38bdf8" stroke-width="2"/><circle cx="840" cy="125" r="11" fill="#a78bfa" opacity=".15" class="halo" style="animation-delay:0.0s"/><circle cx="840" cy="125" r="6" fill="#0b1020" stroke="#a78bfa" stroke-width="2"/><circle cx="840" cy="175" r="11" fill="#a78bfa" opacity=".15" class="halo" style="animation-delay:0.5s"/><circle cx="840" cy="175" r="6" fill="#0b1020" stroke="#a78bfa" stroke-width="2"/>
+      <text x="740" y="272" font-size="11" fill="#475569" text-anchor="middle" letter-spacing="2">INPUT · HIDDEN · OUTPUT</text>
     </g>
-    <g fill="#fff">
-      <circle class="tw" cx="70" cy="40" r="2"/>
-      <circle class="tw" cx="150" cy="150" r="1.6" style="animation-delay:.8s"/>
-      <circle class="tw" cx="330" cy="30" r="2" style="animation-delay:1.6s"/>
-      <circle class="tw" cx="610" cy="60" r="1.8" style="animation-delay:.4s"/>
-      <circle class="tw" cx="800" cy="35" r="2.2" style="animation-delay:2.2s"/>
-      <circle class="tw" cx="850" cy="130" r="1.6" style="animation-delay:1.2s"/>
-      <circle class="tw" cx="520" cy="150" r="1.4" style="animation-delay:2.8s"/>
-    </g>
-    <text class="name" x="450" y="130" text-anchor="middle" font-size="56" font-weight="700" fill="url(#ink)">Адильжан Кадыргажы</text>
-    <g font-size="24" fill="#e0e7ff" text-anchor="middle">
-      <text class="tag" x="450" y="178">строю AI-сервисы на Python</text>
-      <text class="tag t2" x="450" y="178">учу computer vision</text>
-      <text class="tag t3" x="450" y="178">делаю Telegram-ботов</text>
-    </g>
-    <text x="450" y="212" text-anchor="middle" font-size="15" fill="#c7d2fe" opacity=".75" letter-spacing="3">АСТАНА · КАЗАХСТАН</text>
-    <g class="w1" fill="#ffffff" opacity=".07">
-      <path d="M0 232 Q112 204 225 232 T450 232 T675 232 T900 232 T1125 232 T1350 232 T1575 232 T1800 232 V280 H0 Z"/>
-    </g>
-    <g class="w2" fill="#ffffff" opacity=".1">
-      <path d="M0 248 Q112 224 225 248 T450 248 T675 248 T900 248 T1125 248 T1350 248 T1575 248 T1800 248 V280 H0 Z"/>
-    </g>
+    <rect x=".5" y=".5" width="899" height="299" rx="16" fill="none" stroke="#1e293b"/>
   </g>
 </svg>
