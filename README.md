@@ -1,8 +1,10 @@
-<h1 align="center">Адильжан Кадыргажы</h1>
+<p align="center">
+  <img src="assets/header.svg" alt="Адильжан Кадыргажы" width="100%">
+</p>
 
 <p align="center">
-  школьник из Астаны · строю AI-сервисы на Python<br>
-  <a href="https://adilzhan.vercel.app">сайт</a> · <a href="https://t.me/crybaby_c">telegram</a></p>
+  <a href="https://adilzhan.vercel.app">сайт</a> · <a href="https://t.me/crybaby_c">telegram</a>
+</p>
 
 ---
 
