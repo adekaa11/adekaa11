@@ -1,3 +1,3 @@
-hi, i'm adilzhan
+adilzhan, nis student
 
-15 y/o
+15y/o
